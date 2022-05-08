@@ -1,0 +1,41 @@
+ 
+
+ 
+ 
+ {{#with movieDetails}}
+<section class="movie">
+ <img src = {{this.image}} alt="details">
+ <section class="goBack">
+<a href="/movies">Go back Movies</a> <a href="/">Go back Cinema</a>
+ </section>
+  <h2 id="title">{{this.title}}</h2> 
+   
+   <h3>Director: {{this.director}}</h3>
+  
+      
+    <h4>Starts</h4>
+    <ul>
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul> 
+
+    <h5>{{this.description}}</h5>
+    {{#each showtimes}}
+    {{this}}
+    {{/each}}
+   
+
+    {{/with}}
+     </section>
+
+ 
+ 
+
+ 
+    
+   
+    
+
+
+    
